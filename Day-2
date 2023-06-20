@@ -1,0 +1,83 @@
+MONGODB Comments:
+----------------
+
+> use sampledb
+< switched to db sampledb
+
+
+> show databases
+   admin   40.00 KiB
+   config  12.00 KiB
+   local   40.00 KiB
+
+
+> use mydatabase
+< switched to db mydatabase
+
+
+> db.mycollection.insertOne({ name:"John" , age: 30});
+< {
+  acknowledged: true,
+  insertedId: ObjectId("64916ee02c831933e31fb986")
+ }
+
+
+> db.mycollection.find();
+< {
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 30
+ }
+
+
+> db.mycollection.updateOne({ name: "John"},{ $set: { age: 35} });
+< {
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+ }
+
+
+> db.mycollection.find();
+< {
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+ }
+
+
+> db.mycollection.insertOne([{ name:"John" , age: 30} ,{ name:"Deepak" , age: 20} ,{ name:"Bala" , age:20} ]);
+< {
+  acknowledged: true,
+  insertedId: ObjectId("6491711c2c831933e31fb987")
+ }
+
+> db.mycollection.find();
+< {
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+}
+
+{
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+}
+{
+  '0': {
+    name: 'John',
+    age: 30
+  },
+  '1': {
+    name: 'Deepak',
+    age: 20
+  },
+  '2': {
+    name: 'Bala',
+    age: 20
+  },
+  _id: ObjectId("6491711c2c831933e31fb987")
+}
