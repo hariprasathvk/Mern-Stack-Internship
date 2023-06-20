@@ -1,0 +1,114 @@
+DBMS:
+interface between user and user data
+
+darabase components:
+hardware,software,end user,data,data query language.
+
+Architecture:
+1 tier,2-tier,3-tier
+
+1- tier:- interaction between client and user
+2- tier:- client can access the dwatabase through application
+3- tier:- client can use only the application layer &system admin can able to use only the presentation layer.
+
+Types of database:
+1.Distributed database
+2.Centralized database
+3.Relational database
+4.Graph database
+5.NoSQL Database
+6.Cloud Database
+
+Relational database[RDBMS]:
+	* the known datas stored in the database. 
+	* structured way of data. 
+	* data will be stored in a table format
+
+NOSQl:
+	* to store the non structured way of data.
+
+Distributed database:
+	In a database, a single table will  be used by the other databases.
+
+Centalized database:
+	In a database, the n number of tables will  be used by the other databases.
+
+Hirarchy database:
+	* 1-many & many-1 relationship
+	* tree structure
+	* top down approch, bottom up approch.
+
+Network database:
+	* Many-many relationship
+	* Doesnt need a tree structure
+	* graph structure.
+
+Cloud database:
+	no need any physical storage.
+
+
+Meta data:
+	Information about the information.
+
+
+Model of data:
+Structures:
+	* structured data,
+	* non structured data,
+	* semi structured data.
+
+Er data model:- 
+	* through pictorial we can define
+	* Structured
+	* 1-many,1-1 relationship
+
+	ER model:-
+		1.Entity- weak entity:-  an entity that cannot be uniquely identified by its attributes alone; 
+		2.Attribute:-
+			* Key attribute:- uniquely identify a tuple (or row) in a relation (or table).
+			* composite attribute:- those attributes that can further divide into more simple attributes
+			* Multivalued attribute:- an attribute that can have multiple value for a single intance of an entity.
+			* Derived attribute:-  an attribute in a table that has been derived using other attributes in the database. 
+		3.Relation:-
+			* 1-1
+			* 1-m
+			* m-1
+			* m-m
+
+object model:-
+	Express the ER model
+
+Semi structured:-
+	structured or non structured.it have NOSQL
+	it use MangoDB
+
+
+
+SQL:
+1.data defenition language (create,alter,drop,truncate)
+2.data manipulation language (insert,update,delete)
+3.data control language (command is grand and revoke)
+4.transaction control language (commit,rollback,savepoint)
+5.Data Query language(Select)
+
+
+
+
+SERVER:
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
